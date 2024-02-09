@@ -19,17 +19,33 @@ html {
 }
 
 h1 {
-    font-size: 96px;
+    font-size: 6vw; /* Используем относительные единицы для размера шрифта */
     margin-bottom: 20px;
 }
 
 p {
-    font-size: 96px;
-    margin-top: 250px;
+    font-size: 6vw; /* Используем относительные единицы для размера шрифта */
+    margin-top: 5vw; /* Используем относительные единицы для отступа */
 }
 
 img {
-    width: 100px;
-    margin: 50px auto;
+    width: 60vw; /* Используем относительные единицы для размера изображения */
+    margin: 10vw auto; /* Используем относительные единицы для отступа */
     display: block;
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 8vw;
+    }
+
+    p {
+        font-size: 8vw;
+        margin-top: 5vw;
+    }
+
+    img {
+        width: 80vw;
+        margin: 10vw auto;
+    }
 }
